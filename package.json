@@ -1,0 +1,58 @@
+{
+  "name": "rn",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "tsc && node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@cycle/http": "^14.8.0",
+    "@cycle/isolate": "^3.2.0",
+    "@cycle/native-screen": "^1.0.0-rc.4",
+    "@cycle/run": "^3.1.0",
+    "@types/react": "^16.0.34",
+    "@types/react-native": "^0.52.0",
+    "cycle-native-navigation": "https://github.com/hgiasac/cycle-native-navigation.git#remove-dev",
+    "cycle-onionify": "^5.0.0",
+    "prop-types": "^15.6.0",
+    "react": "16.2.0",
+    "react-native": "0.51.0",
+    "react-native-navigation": "^1.1.338",
+    "xstream": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.0.1",
+    "@types/react-test-renderer": "^16.0.0",
+    "babel-jest": "22.0.6",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.0.6",
+    "react-test-renderer": "16.2.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0",
+    "ts-jest": "^22.0.1",
+    "tslint": "^5.9.1",
+    "tslint-consistent-codestyle": "^1.11.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "typescript": "2.6.2"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/"
+    ],
+    "cacheDirectory": ".jest/cache"
+  }
+}
